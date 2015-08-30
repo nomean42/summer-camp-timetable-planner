@@ -33,7 +33,7 @@ Member.prototype.createMember = function(paramsMember) {
 	newParamsMember.id = currentId;
 	idEnum[idEnum.length] = currentId;
 	var currentMember = new Member(newParamsMember);
-	MemberDataBase[currentId] = currentMember;
+	memberDataBase[currentId] = currentMember;
 };
 
 
