@@ -36,13 +36,13 @@ Alive.prototype.createAlive = function(paramsAlive) {
 	aliveDataBase[currentId] = currentAlive;
 };
 
+
 /**
  *
- * @type {{STUDENT: string, TEACHER: string, ADMIN: string}}
  * @enum {string}
  */
 Alive.WhoIs =  {
 	STUDENT: 'student',
 	TEACHER: 'teacher',
 	ADMIN: 'admin'
-}
+};
