@@ -10,11 +10,11 @@
  * @constructor
  */
 Member = function(paramsMember) {
-	this.firstName = paramsMember.firstName;
-	this.secondName = paramsMember.secondName;
-	this.thirdName = paramsMember.thirdName;
-	this.id = paramsMember.id;
-	this.whoIs = paramsMember.whoIs;
+	this._firstName = paramsMember.firstName;
+	this._secondName = paramsMember.secondName;
+	this._thirdName = paramsMember.thirdName;
+	this._id = paramsMember.id;
+	this._whoIs = paramsMember.whoIs;
 
 };
 
@@ -35,6 +35,33 @@ Member.prototype.createMember = function(paramsMember) {
 	var currentMember = new Member(newParamsMember);
 	memberDataBase[currentId] = currentMember;
 };
+
+
+/**
+ * @protected
+ */
+Member.prototype._firstName;
+
+
+/**
+ * @protected
+ */
+Member.prototype._secondName;
+
+/**
+ * @protected
+ */
+Member.prototype._thirdName;
+
+/**
+ * @protected
+ */
+Member.prototype._id;
+
+/**
+ * @protected
+ */
+Member.prototype._whoIs;
 
 
 /**
