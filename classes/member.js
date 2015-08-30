@@ -13,9 +13,19 @@ Member = function(paramsMember) {
 	this._firstName = paramsMember.firstName;
 	this._secondName = paramsMember.secondName;
 	this._thirdName = paramsMember.thirdName;
-	this._id = paramsMember.id;
+	this._id = null;
 	this._whoIs = paramsMember.whoIs;
+};
 
+
+/**
+ *
+ * @param {number} id
+ */
+Member.prototype.setId = function(id) {
+	if (this._id === null) {
+		this._id = id;
+	}
 };
 
 
@@ -38,27 +48,35 @@ Member.prototype.createMember = function(paramsMember) {
 
 
 /**
+ * @type {string}
  * @protected
  */
 Member.prototype._firstName;
 
 
 /**
+ * @type {string}
  * @protected
  */
 Member.prototype._secondName;
 
+
 /**
+ * @type {string}
  * @protected
  */
 Member.prototype._thirdName;
 
+
 /**
+ * @type {?number}
  * @protected
  */
 Member.prototype._id;
 
+
 /**
+ * @type {Member.WhoIs}
  * @protected
  */
 Member.prototype._whoIs;
