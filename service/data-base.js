@@ -9,7 +9,11 @@ DataBase = function() {};
 /**
  * @inheritDoc
  */
-DataBase.prototype.set = function(member) {};
+DataBase.prototype.set = function(member) {
+	member.setId();
+	aliveDataBase.push(member);
+	return member._id;
+};
 
 
 /**
