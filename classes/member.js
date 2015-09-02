@@ -6,6 +6,7 @@
  * thirdName: string
  * id: number
  * whoIs: Member.WhoIs
+ * gender: Member.Gender
  * }} paramsMember
  * @constructor
  */
@@ -15,35 +16,21 @@ Member = function(paramsMember) {
 	this._thirdName = paramsMember.thirdName;
 	this._id = null;
 	this._whoIs = paramsMember.whoIs;
+	this._gender = paramsMember.gender;
 };
 
 
 /**
  *
- * @param {number} id
+ *@
  */
-Member.prototype.setId = function(id) {
+Member.prototype.setId = function() {
 	if (this._id === null) {
-		this._id = id;
+		this._id = aliveDataBase.length + 1;
 	}
-};
-
-
-/**
- *
- * @param paramsMember
- */
-Member.prototype.createMember = function(paramsMember) {
-	var newParamsMember = {};
-	var currentId = idEnum.length + 1;
-	newParamsMember.firstName = paramsMember.firstName;
-	newParamsMember.secondName = paramsMember.secondName;
-	newParamsMember.thirdName = paramsMember.thirdName;
-	newParamsMember.whoIs = paramsMember.whoIs;
-	newParamsMember.id = currentId;
-	idEnum[idEnum.length] = currentId;
-	var currentMember = new Member(newParamsMember);
-	memberDataBase[currentId] = currentMember;
+	else {
+		console.log('id for', this, 'already set');
+	}
 };
 
 
@@ -81,6 +68,12 @@ Member.prototype._id;
  */
 Member.prototype._whoIs;
 
+Member.prototype._gender;
+
+Member.Gender = {
+	MALE: 'Male',
+	FEMALE: 'Female'
+};
 
 /**
  *
