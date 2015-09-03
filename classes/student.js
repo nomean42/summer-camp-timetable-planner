@@ -1,5 +1,19 @@
-
-Student = function (params) {
+/**
+ *
+ * @param {{
+ * 		firstName: string
+ * 		secondName: string
+ * 		thirdName: string
+ * 		id: number
+ * 		whoIs: Member.WhoIs
+ * 		gender: Member.Gender
+ * 		age: number
+ *		squad: Student.Squad
+ *		status: Student.Status
+ * }}params
+ * @constructor
+ */
+Student = function(params) {
 	var insideParams = {};
 
 	insideParams.firstName = params.firstName;
@@ -14,7 +28,6 @@ Student = function (params) {
 
     Member.call(this, insideParams);
 };
-
 Student.prototype = Object.create(Member.prototype);
 
 /**
@@ -34,8 +47,7 @@ Student.prototype.squad;
 Student.prototype.status;
 
 /**
- *
- * @enum
+ * @enum {string}
  */
 Student.Squad = {
 	FIRST: '1',
@@ -45,7 +57,9 @@ Student.Squad = {
 	FIFTH: '5'
 };
 
-
+/**
+ * @enum {string}
+ */
 Student.Status = {
 	FREE: 'free',
 	BUSY: 'busy'
