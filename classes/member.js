@@ -69,8 +69,18 @@ Member.prototype._id;
  */
 Member.prototype._whoIs;
 
+
+/**
+ * @type {Member.Gender}
+ * @protected
+ */
 Member.prototype._gender;
 
+
+/**
+ *
+ * @enum {string}
+ */
 Member.Gender = {
 	MALE: 'Male',
 	FEMALE: 'Female'
