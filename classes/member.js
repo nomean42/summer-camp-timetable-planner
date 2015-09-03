@@ -20,6 +20,8 @@ Member = function(paramsMember) {
 };
 
 
+//todo Member.prototype.getFullName
+
 /**
  *
  *@
