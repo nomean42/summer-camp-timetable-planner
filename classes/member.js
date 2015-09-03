@@ -26,7 +26,7 @@ Member = function(paramsMember) {
  */
 Member.prototype.setId = function() {
 	if (this._id === null) {
-		this._id = aliveDataBase.length + 1;
+		this._id = memberDataBase.length + 1;
 	}
 	else {
 		console.log('id for', this, 'already set');

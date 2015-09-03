@@ -11,7 +11,7 @@ DataBase = function() {};
  */
 DataBase.prototype.set = function(member) {
 	member.setId();
-	aliveDataBase.push(member);
+	memberDataBase.push(member);
 	return member._id;
 };
 
