@@ -29,7 +29,8 @@ Member.prototype.setId = function() {
 		this._id = memberDataBase.length + 1;
 	}
 	else {
-		console.log('id for', this, 'already set');
+        var name = this._firstName + ' ' + this._secondName;
+		console.log('id for', name, 'already set');
 	}
 };
 
