@@ -1,6 +1,7 @@
 
 Student = function (params) {
 	var insideParams = {};
+
 	insideParams.firstName = params.firstName;
 	insideParams.secondName = params.secondName;
 	insideParams.thirdName = params.thirdName;
@@ -10,7 +11,8 @@ Student = function (params) {
 	insideParams.age = params.age;
 	insideParams.squad = params.squad;
 	insideParams.status = Student.Status.FREE;
-	Member.call(this, insideParams);
+
+    Member.call(this, insideParams);
 };
 
 Student.prototype = Object.create(Member.prototype);
