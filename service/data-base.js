@@ -1,5 +1,6 @@
 var memberDataBase = [];
 
+
 /**
  *
  * @constructor
@@ -17,22 +18,23 @@ DataBase.prototype.set = function(member) {
 	return member.getId();
 };
 
-//todo finish
+//todo correct id search
 /**
  *
  * @inheritDoc
  */
 DataBase.prototype.get = function(property, value) {
-	var outMiniDataBase = [];
+	var searchResult = [];
 	for (var i = 0; i < memberDataBase.length; ++i) {
 		if (memberDataBase[i][property] === value) {
-			outMiniDataBase.push(memberDataBase[i]);
+			searchResult.push(memberDataBase[i]);
 		}
-		else if (typeof outMiniDataBase[0] === 'undefined') {
-			console.log('element with ' + property + ' = ' + value + 'was not found');
-		}
-		else {
-			return outMiniDataBase;
-		}
+
+	}
+	if (typeof searchResult[0] === 'undefined') {
+		console.log('element with ' + property + ' = ' + value + ' was not found');
+	}
+	else {
+		return searchResult;
 	}
 };
