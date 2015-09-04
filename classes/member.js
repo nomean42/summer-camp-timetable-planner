@@ -20,22 +20,48 @@ Member = function(paramsMember) {
 };
 
 
-//todo Member.prototype.getFullName
 
 /**
  *
- *@
+ *
+ */
+Member.prototype.getFullName =function() {
+	if (typeof (this._firstName) !== 'undefined' || typeof (this._secondName) !== 'undefined' ) {
+		return this._firstName + ' ' + this._secondName;
+	}
+	else {
+		console.log('first name or second name is not set');
+	}
+};
+
+
+/**
+ *
+ *
  */
 Member.prototype.setId = function() {
 	if (this._id === null) {
 		this._id = memberDataBase.length + 1;
 	}
 	else {
-        var name = this._firstName + ' ' + this._secondName;
-		console.log('id for', name, 'already set');
+		var name = this.getFullName();
+       	console.log('id for', name, 'already set');
 	}
 };
 
+
+/**
+ *
+ *
+ */
+Member.prototype.getId = function() {
+	if (this._id !== null) {
+		return this._id;
+	}
+	else {
+		console.log('id is not set');
+	}
+};
 
 /**
  * @type {string}
