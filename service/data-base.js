@@ -1,3 +1,5 @@
+var memberDataBase = [];
+
 /**
  *
  * @constructor
@@ -12,12 +14,25 @@ DataBase = function() {};
 DataBase.prototype.set = function(member) {
 	member.setId();
 	memberDataBase.push(member);
-	return member._id; //todo 'нельзя обращаться так к непубличным свойствам. нужен публичный метод member.getId()'
+	return member.getId();
 };
 
-//todo
+//todo finish
 /**
  *
  * @inheritDoc
  */
-DataBase.prototype.get = function(property, value) {};
+DataBase.prototype.get = function(property, value) {
+	var outMiniDataBase = [];
+	for (var i = 0; i < memberDataBase.length; ++i) {
+		if (memberDataBase[i][property] === value) {
+			outMiniDataBase.push(memberDataBase[i]);
+		}
+		else if (typeof outMiniDataBase[0] === 'undefined') {
+			console.log('element with ' + property + ' = ' + value + 'was not found');
+		}
+		else {
+			return outMiniDataBase;
+		}
+	}
+};
