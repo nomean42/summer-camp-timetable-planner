@@ -9,7 +9,7 @@ IDataBase = function() {};
 /**
  * Return element id
  * @param {IDataBase.Type} member
- * @return {number}
+ * @return {string}
  */
 IDataBase.prototype.set = function(member) {};
 

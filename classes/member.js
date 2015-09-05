@@ -23,7 +23,7 @@ Member = function(paramsMember) {
 
 /**
  *
- *
+ *@return {string}
  */
 Member.prototype.getFullName =function() {
 	if (typeof (this._firstName) !== 'undefined' || typeof (this._secondName) !== 'undefined' ) {
