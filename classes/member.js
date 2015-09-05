@@ -4,7 +4,7 @@
  * firstName: string
  * secondName: string
  * thirdName: string
- * id: number
+ * id: string
  * whoIs: Member.WhoIs
  * gender: Member.Gender
  * }} paramsMember
@@ -41,7 +41,7 @@ Member.prototype.getFullName =function() {
  */
 Member.prototype.setId = function() {
 	if (this._id === null) {
-		this._id = memberDataBase.length + 1;
+		this._id = String(memberDataBase.length + 1);
 	}
 	else {
 		var name = this.getFullName();
@@ -62,6 +62,7 @@ Member.prototype.getId = function() {
 		console.log('id is not set');
 	}
 };
+
 
 /**
  * @type {string}

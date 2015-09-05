@@ -4,7 +4,7 @@
  * 		firstName: string
  * 		secondName: string
  * 		thirdName: string
- * 		id: number
+ * 		id: string
  * 		whoIs: Member.WhoIs
  * 		gender: Member.Gender
  * 		age: number
