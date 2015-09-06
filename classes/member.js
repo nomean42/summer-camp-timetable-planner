@@ -37,11 +37,11 @@ Member.prototype.getFullName =function() {
 
 /**
  *
- *
+ * @param {string} id
  */
-Member.prototype.setId = function() {
+Member.prototype.setId = function(id) {
 	if (this._id === null) {
-		this._id = String(memberDataBase.length + 1);
+		this._id = id;
 	}
 	else {
 		var name = this.getFullName();
