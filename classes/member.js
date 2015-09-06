@@ -20,12 +20,7 @@ Member = function(paramsMember, type) {
  *@return {string}
  */
 Member.prototype.getFullName =function() {
-	if (typeof (this._firstName) !== 'undefined' || typeof (this._secondName) !== 'undefined' ) {
-		return this._firstName + ' ' + this._secondName;
-	}
-	else {
-		console.log('first name or second name is not set');
-	}
+	return this._firstName + ' ' + this._secondName;
 };
 
 
