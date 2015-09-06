@@ -18,7 +18,7 @@ DataBase.prototype.set = function(member) {
 	return member.getId();
 };
 
-//todo correct id search
+
 /**
  *
  * @inheritDoc
@@ -31,10 +31,5 @@ DataBase.prototype.get = function(property, value) {
 		}
 
 	}
-	if (typeof searchResult[0] === 'undefined') {
-		console.log('element with ' + property + ' = ' + value + ' was not found');
-	}
-	else {
-		return searchResult;
-	}
+	return searchResult;
 };
