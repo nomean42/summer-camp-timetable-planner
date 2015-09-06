@@ -6,12 +6,31 @@
  */
 Student = function(baseParams, extendParams) {
 	this._birthday = extendParams.birthday;
-	this.squad = extendParams.squad;
-	this.status = Student.Status.FREE;
+	this._squad = extendParams.squad;
+	this._status = Student.Status.FREE;
 
     Member.call(this, baseParams, Member.Type.STUDENT);
 };
 Student.prototype = Object.create(Member.prototype);
+
+
+/**
+ *
+ * @return {Student.Squad}
+ */
+Student.prototype.getSquad = function() {
+	return this._squad;
+};
+
+
+/**
+ *
+ * @return {Student.Status}
+ */
+Student.prototype.getStatus = function() {
+	return this._status;
+};
+
 
 /**
  * @type {Date}
@@ -19,16 +38,20 @@ Student.prototype = Object.create(Member.prototype);
  */
 Student.prototype._birthday;
 
+
 /**
  * @type {Student.Squad}
+ * @protected
  */
-Student.prototype.squad;
+Student.prototype._squad;
 
 
 /**
  * @type {Student.Status}
+ * @protected
  */
-Student.prototype.status;
+Student.prototype._status;
+
 
 /**
  * @enum {string}
@@ -41,6 +64,7 @@ Student.Squad = {
 	FIFTH: '5'
 };
 
+
 /**
  * @enum {string}
  */
@@ -48,6 +72,7 @@ Student.Status = {
 	FREE: 'free',
 	BUSY: 'busy'
 };
+
 
 /**
  * @typedef {{
