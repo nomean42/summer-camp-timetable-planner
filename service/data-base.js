@@ -26,13 +26,12 @@ DataBase.prototype.set = function(type, data) {
  *
  * @inheritDoc
  */
-DataBase.prototype.get = function(property, value) {
+DataBase.prototype.get = function(type, property, value) {
 	var searchResult = [];
-	for (var i = 0; i < this._memberDataBase.length; ++i) {
-		if (this._memberDataBase[i][property] === value) {
-			searchResult.push(this._memberDataBase[i]);
+	for (var i = 0; i < this._data[type].length; ++i) {
+		if (this._data[type][i][property] === value) {
+			searchResult.push(this._data[type][i]);
 		}
-
 	}
 	return searchResult;
 };
