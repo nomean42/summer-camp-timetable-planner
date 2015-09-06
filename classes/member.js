@@ -1,21 +1,15 @@
 /**
  *
- * @param {{
- * firstName: string
- * secondName: string
- * thirdName: string
- * id: string
- * type: Member.Type
- * gender: Member.Gender
- * }} paramsMember
+ * @param  {Member.Params} paramsMember
+ * @param {Member.Type} type
  * @constructor
  */
-Member = function(paramsMember) {
+Member = function(paramsMember, type) {
 	this._firstName = paramsMember.firstName;
 	this._secondName = paramsMember.secondName;
 	this._thirdName = paramsMember.thirdName;
 	this._id = null;
-	this._type = paramsMember.type;
+	this._type = type;
 	this._gender = paramsMember.gender;
 };
 
@@ -124,3 +118,14 @@ Member.Type =  {
 	TEACHER: 'teacher',
 	ADMIN: 'admin'
 };
+
+/**
+ * @typedef {{
+ * 		firstName: string
+ * 		secondName: string
+ * 		thirdName: string
+ * 		id: string
+ * 		gender: Member.Gender
+ * }}
+ */
+Member.Params;
