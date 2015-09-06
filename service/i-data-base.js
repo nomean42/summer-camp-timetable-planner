@@ -24,6 +24,9 @@ IDataBase.prototype.get = function(property, value) {};
 
 
 /**
- * @type {*}
+ * @enum {string}
  */
-IDataBase.Type;
+IDataBase.Type = {
+    MEMBER: 'member',
+    MASTERCLASS: 'masterclass'
+};
