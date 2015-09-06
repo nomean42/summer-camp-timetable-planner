@@ -7,6 +7,7 @@
  */
 DataBase = function() {
 	this._memberDataBase = [];
+	this._init();
 };
 
 
@@ -33,6 +34,17 @@ DataBase.prototype.get = function(property, value) {
 
 	}
 	return searchResult;
+};
+
+
+/**
+ * @protected
+ */
+DataBase.prototype._init = function() {
+	this._data = {};
+	Object.keys(this.Type).forEach(function (type, i, array) {
+		this._data[type] = [];
+	}, this);
 };
 
 
