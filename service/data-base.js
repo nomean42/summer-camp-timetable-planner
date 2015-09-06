@@ -14,10 +14,11 @@ DataBase = function() {
 /**
  * @inheritDoc
  */
-DataBase.prototype.set = function(member) {
-	member.setId();
-	this._memberDataBase.push(member);
-	return member.getId();
+DataBase.prototype.set = function(type, data) {
+	var id = this._generateId();
+	data.setId(id);
+	this._data[type].push(data);
+	return id;
 };
 
 
@@ -45,6 +46,16 @@ DataBase.prototype._init = function() {
 	Object.keys(this.Type).forEach(function (type, i, array) {
 		this._data[type] = [];
 	}, this);
+};
+
+
+/**
+ * @return {string}
+ * @protected
+ */
+DataBase.prototype._generateId = function() {
+	// todo
+	return (Math.random() * 1000).toString();
 };
 
 
