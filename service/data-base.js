@@ -1,4 +1,3 @@
-var memberDataBase = [];
 
 
 /**
@@ -6,7 +5,9 @@ var memberDataBase = [];
  * @constructor
  * @implements IDataBase
  */
-DataBase = function() {};
+DataBase = function() {
+	this._memberDataBase = [];
+};
 
 
 /**
@@ -14,7 +15,7 @@ DataBase = function() {};
  */
 DataBase.prototype.set = function(member) {
 	member.setId();
-	memberDataBase.push(member);
+	this._memberDataBase.push(member);
 	return member.getId();
 };
 
@@ -25,11 +26,17 @@ DataBase.prototype.set = function(member) {
  */
 DataBase.prototype.get = function(property, value) {
 	var searchResult = [];
-	for (var i = 0; i < memberDataBase.length; ++i) {
-		if (memberDataBase[i][property] === value) {
-			searchResult.push(memberDataBase[i]);
+	for (var i = 0; i < this._memberDataBase.length; ++i) {
+		if (this._memberDataBase[i][property] === value) {
+			searchResult.push(this._memberDataBase[i]);
 		}
 
 	}
 	return searchResult;
 };
+
+
+/**
+ * @type {Array.<IDataBase.Item>}
+ */
+DataBase.prototype._memberDataBase;
