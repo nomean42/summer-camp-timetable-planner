@@ -1,38 +1,23 @@
 /**
  *
- * @param {{
- * 		firstName: string
- * 		secondName: string
- * 		thirdName: string
- * 		id: string
- * 		type: Member.Type
- * 		gender: Member.Gender
- * 		age: number
- *		squad: Student.Squad
- *		status: Student.Status
- * }}params
+ * @param {Member.Params} baseParams
+ * @param {Student.Params} extendParams
  * @constructor
  */
-Student = function(params) {
-	var insideParams = {};
+Student = function(baseParams, extendParams) {
+	this._birthday = extendParams.birthday;
+	this.squad = extendParams.squad;
+	this.status = Student.Status.FREE;
 
-	insideParams.firstName = params.firstName;
-	insideParams.secondName = params.secondName;
-	insideParams.thirdName = params.thirdName;
-	insideParams.id = params.id;
-	insideParams.type = Member.Type.STUDENT;
-	insideParams.age = params.age;
-	insideParams.squad = params.squad;
-	insideParams.status = Student.Status.FREE;
-
-    Member.call(this, insideParams);
+    Member.call(this, baseParams, Member.Type.STUDENT);
 };
 Student.prototype = Object.create(Member.prototype);
 
 /**
- *@type {number}
+ * @type {Date}
+ * @protected
  */
-Student.prototype.age;
+Student.prototype._birthday;
 
 /**
  * @type {Student.Squad}
@@ -63,3 +48,12 @@ Student.Status = {
 	FREE: 'free',
 	BUSY: 'busy'
 };
+
+/**
+ * @typedef {{
+ * 		birthday: Date
+ *		squad: Student.Squad
+ *		status: Student.Status
+ * }}
+ */
+Student.Params;
