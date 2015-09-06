@@ -5,7 +5,7 @@
  * secondName: string
  * thirdName: string
  * id: string
- * whoIs: Member.WhoIs
+ * type: Member.Type
  * gender: Member.Gender
  * }} paramsMember
  * @constructor
@@ -15,7 +15,7 @@ Member = function(paramsMember) {
 	this._secondName = paramsMember.secondName;
 	this._thirdName = paramsMember.thirdName;
 	this._id = null;
-	this._whoIs = paramsMember.whoIs;
+	this._type = paramsMember.type;
 	this._gender = paramsMember.gender;
 };
 
@@ -93,10 +93,10 @@ Member.prototype._id;
 
 
 /**
- * @type {Member.WhoIs}
+ * @type {Member.Type}
  * @protected
  */
-Member.prototype._whoIs;
+Member.prototype._type;
 
 
 /**
@@ -119,7 +119,7 @@ Member.Gender = {
  *
  * @enum {string}
  */
-Member.WhoIs =  {
+Member.Type =  {
 	STUDENT: 'student',
 	TEACHER: 'teacher',
 	ADMIN: 'admin'

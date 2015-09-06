@@ -5,7 +5,7 @@
  * 		secondName: string
  * 		thirdName: string
  * 		id: string
- * 		whoIs: Member.WhoIs
+ * 		type: Member.Type
  * 		gender: Member.Gender
  * 		age: number
  *		squad: Student.Squad
@@ -20,8 +20,7 @@ Student = function(params) {
 	insideParams.secondName = params.secondName;
 	insideParams.thirdName = params.thirdName;
 	insideParams.id = params.id;
-	insideParams.whoIs = Member.WhoIs.STUDENT;
-	insideParams.gender = params.gender;
+	insideParams.type = Member.Type.STUDENT;
 	insideParams.age = params.age;
 	insideParams.squad = params.squad;
 	insideParams.status = Student.Status.FREE;
