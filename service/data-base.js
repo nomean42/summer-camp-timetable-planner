@@ -1,9 +1,10 @@
 
 
+
 /**
  *
  * @constructor
- * @implements IDataBase
+ * @implements {IDataBase}
  */
 DataBase = function() {
 	this._memberDataBase = [];
@@ -42,7 +43,7 @@ DataBase.prototype.get = function(type, property, value) {
  */
 DataBase.prototype._init = function() {
 	this._data = {};
-	Object.keys(this.Type).forEach(function (type, i, array) {
+	Object.keys(this.Type).forEach(function(type, i, array) {
 		this._data[type] = [];
 	}, this);
 };
