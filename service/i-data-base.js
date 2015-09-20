@@ -1,3 +1,6 @@
+
+
+
 /**
  *
  * @constructor
@@ -29,8 +32,8 @@ IDataBase.prototype.get = function(type, property, value) {};
  * @enum {string}
  */
 IDataBase.Type = {
-    MEMBER: 'member',
-    MASTERCLASS: 'masterclass'
+	MEMBER: 'member',
+	MASTERCLASS: 'masterclass'
 };
 
 
