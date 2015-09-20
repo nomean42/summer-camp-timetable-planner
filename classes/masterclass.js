@@ -22,10 +22,10 @@ Masterclass = function(masterclassParams) {
 	this._version = masterclassParams.version;
 	this._subversion = masterclassParams.subversion;
 	this._agePerm = masterclassParams.agePerm;
-	this.date = masterclassParams.date;
-	this.owner = masterclassParams.owner;
+	this._date = masterclassParams.date;
+	this._owner = masterclassParams.owner;
 	this._maxLoad = masterclassParams.maxLoad;
-	this.participants = masterclassParams.participants;
+	this._participants = masterclassParams.participants;
 	this._masterClassDescription = masterclassParams.masterClassDescription;
 };
 
@@ -60,14 +60,16 @@ Masterclass.prototype._agePerm;
 
 /**
  * @type {Date}
+ * @private
  */
-Masterclass.prototype.date;
+Masterclass.prototype._date;
 
 
 /**
  * @type {Teacher}
+ * @private
  */
-Masterclass.prototype.owner;
+Masterclass.prototype._owner;
 
 
 /**
@@ -78,8 +80,9 @@ Masterclass.prototype._maxLoad;
 
 /**
  * @type {number}
+ * @private
  */
-Masterclass.prototype.participants;
+Masterclass.prototype._participants;
 
 
 /**
