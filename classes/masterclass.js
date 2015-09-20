@@ -9,10 +9,10 @@
  *      subversion: number
  *      agePerm: Masterclass.Permission
  *      date: Date
- *      owner: Teacher todo
+ *      owner: Teacher.Id
  *      maxLoad: number
  *      participants: Array.<Member.Id>
- *      masterClassDescription: Masterclass.Description todo
+ *      masterClassDescription: Masterclass.Description
  * }} masterclassParams
  * @constructor
  */
