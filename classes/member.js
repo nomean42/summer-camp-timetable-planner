@@ -26,7 +26,7 @@ Member.prototype.getFullName =function() {
 
 /**
  *
- * @param {string} id
+ * @param {Member.Id} id
  */
 Member.prototype.setId = function(id) {
 	if (this._id === null) {
@@ -124,3 +124,8 @@ Member.Type =  {
  * }}
  */
 Member.Params;
+
+/**
+  * @typedef {?string}
+ */
+Member.Id;

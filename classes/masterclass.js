@@ -2,43 +2,36 @@
  *
  * @param {{
  *      id: string
- *      title: MasterClassTitle todo
  *      version: number
  *      subversion: number
  *      agePerm: Masterclass.Permission
  *      date: Date
- *      host: Teacher todo
+ *      owner: Teacher todo
  *      maxLoad: number
- *      currLoad: number
- *      masterClassDescription: Description todo
+ *      participants: Array.<Member.Id>
+ *      masterClassDescription: Masterclass.Description todo
  * }} masterclassParams
  * @constructor
  */
 
 Masterclass = function(masterclassParams) {
 	this._id = masterclassParams.id;
-	this._title = masterclassParams.title;
 	this._version = masterclassParams.version;
 	this._subversion = masterclassParams.subversion;
 	this._agePerm = masterclassParams.agePerm;
 	this.date = masterclassParams.date;
-	this.host = masterclassParams.host;
+	this.owner = masterclassParams.owner;
 	this._maxLoad = masterclassParams.maxLoad;
-	this.currLoad = masterclassParams.currLoad;
+	this.participants = masterclassParams.participants;
 	this._masterClassDescription = masterclassParams.masterClassDescription;
 };
+
 
 /**
  * @type {string}
  * @private
  */
 Masterclass.prototype._id;
-
-/**
- * @type {MasterClassTitle}
- * @private
- */
-Masterclass.prototype._title;
 
 
 /**
@@ -61,6 +54,7 @@ Masterclass.prototype._subversion;
  */
 Masterclass.prototype._agePerm;
 
+
 /**
  * @type {Date}
  */
@@ -70,7 +64,7 @@ Masterclass.prototype.date;
 /**
  * @type {Teacher}
  */
-Masterclass.prototype.host;
+Masterclass.prototype.owner;
 
 
 /**
@@ -82,11 +76,11 @@ Masterclass.prototype._maxLoad;
 /**
  * @type {number}
  */
-Masterclass.prototype.currLoad;
+Masterclass.prototype.participants;
 
 
 /**
- * @type {Description}
+ * @type {Masterclass.Description}
  */
 Masterclass.prototype._masterClassDescription;
 
@@ -100,3 +94,14 @@ Masterclass.Permission = {
 	YOUNG: 'young',
 	ANY: 'any'
 };
+
+
+/**
+ *
+ * @typedef {{
+ *      title: string
+ *      textDescription: string
+ *      picture: string
+ * }}
+ */
+Masterclass.Description;
