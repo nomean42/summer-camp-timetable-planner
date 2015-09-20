@@ -14,19 +14,18 @@ Member = function(paramsMember, type) {
 };
 
 
-
 /**
  *
  *@return {string}
  */
-Member.prototype.getFullName =function() {
+Member.prototype.getFullName = function() {
 	return this._firstName + ' ' + this._secondName;
 };
 
 
 /**
  *
- * @param {string} id
+ * @param {Member.Id} id
  */
 Member.prototype.setId = function(id) {
 	if (this._id === null) {
@@ -41,7 +40,7 @@ Member.prototype.setId = function(id) {
 
 /**
  *
- *
+ * @return {Member.Id}
  */
 Member.prototype.getId = function() {
 	if (this._id !== null) {
@@ -104,15 +103,17 @@ Member.Gender = {
 	FEMALE: 'Female'
 };
 
+
 /**
  *
  * @enum {string}
  */
-Member.Type =  {
+Member.Type = {
 	STUDENT: 'student',
 	TEACHER: 'teacher',
 	ADMIN: 'admin'
 };
+
 
 /**
  * @typedef {{
@@ -124,3 +125,9 @@ Member.Type =  {
  * }}
  */
 Member.Params;
+
+
+/**
+  * @typedef {?string}
+ */
+Member.Id;
