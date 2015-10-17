@@ -23,9 +23,9 @@ Masterclass = function(masterclassParams) {
 	this._subversion = masterclassParams.subversion;
 	this._agePerm = masterclassParams.agePerm;
 	this._date = masterclassParams.date;
-	this._owner = masterclassParams.owner;
+	this._master = masterclassParams.master;
 	this._maxLoad = masterclassParams.maxLoad;
-	this._participants = masterclassParams.participants;
+	this._students = masterclassParams.students;
 	this._masterClassDescription = masterclassParams.masterClassDescription;
 };
 
@@ -69,7 +69,7 @@ Masterclass.prototype._date;
  * @type {Teacher}
  * @private
  */
-Masterclass.prototype._owner;
+Masterclass.prototype._master;
 
 
 /**
@@ -82,7 +82,7 @@ Masterclass.prototype._maxLoad;
  * @type {number}
  * @private
  */
-Masterclass.prototype._participants;
+Masterclass.prototype._students;
 
 
 /**
