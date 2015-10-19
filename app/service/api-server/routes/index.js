@@ -1,3 +1,6 @@
+
+
+
 /**
  *
  * @param {application} expressApp
@@ -13,10 +16,17 @@ Routes = function(expressApp) {
 /**
  *
  * @param {string} routeName
+ * @return {expressApp.use}
  */
 Routes.prototype.initRoute = function(routeName) {
 	return this._expressApp.use('/' + routeName, this._routes[routeName]());
 };
+
+
+/**
+ *
+ * @type {Function}
+ */
 module.exports = Routes;
 
 
