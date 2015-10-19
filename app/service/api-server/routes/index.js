@@ -24,13 +24,6 @@ Routes.prototype.initRoute = function(routeName) {
 
 
 /**
- *
- * @type {Function}
- */
-module.exports = Routes;
-
-
-/**
  * @type {Object}
  */
 Routes.prototype._routes;
@@ -40,3 +33,10 @@ Routes.prototype._routes;
  * @type {application}
  */
 Routes.prototype._expressApp;
+
+
+/**
+ *
+ * @type {Function}
+ */
+module.exports = Routes;
