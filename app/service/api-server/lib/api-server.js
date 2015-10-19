@@ -1,6 +1,8 @@
 var express = require('express');
 var http = require('http');
 var Routes = require('../routes');
+var serverConfig = require('../server-config.json');
+
 
 
 /**
@@ -10,7 +12,7 @@ var Routes = require('../routes');
 var ApiServer = function() {
 	this._expressApp = express();
 	this._routes = new Routes(this._expressApp);
-	var port = 1337;
+	var port = serverConfig.port;
 
 	http.createServer(this._expressApp)
 		.listen(port, function() {
