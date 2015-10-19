@@ -1,4 +1,5 @@
-var ApiServer = require('../service/api-server')
+var ApiServer = require('../service/api-server');
+
 
 /***
  *
@@ -6,7 +7,6 @@ var ApiServer = require('../service/api-server')
  */
 var App = function() {
 	var server = new ApiServer;
-
 };
 
 

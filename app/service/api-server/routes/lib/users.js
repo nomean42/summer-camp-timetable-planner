@@ -6,7 +6,6 @@ var express = require('express');
  */
 var users = function() {
 	var router = express.Router();
-
 	router.get('/', function(req, res, next) {
 		next();
 		return res.send('USERS!');
@@ -15,8 +14,6 @@ var users = function() {
 		var id = req.params.id;
 		return res.send('id:' + id);
 	});
-
-
 	router.get('/count', function(req, res, next) {
 		return res.send('count!');
 	});
@@ -25,4 +22,7 @@ var users = function() {
 };
 
 
+/**
+ *  * @type {Function}
+ */
 module.exports = users;
