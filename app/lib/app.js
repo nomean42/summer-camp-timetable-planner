@@ -1,9 +1,13 @@
-/***
+var ApiServer = require('../service/api-server');
+
+
+
+/**
  *
  * @constructor
  */
 var App = function() {
-
+	var server = new ApiServer;
 };
 
 
