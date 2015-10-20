@@ -3,17 +3,7 @@
 
 /**
  *
- * @param {{
- *      id: string
- *      version: number
- *      subversion: number
- *      agePerm: Masterclass.Permission
- *      date: Date
- *      owner: Teacher.Id
- *      maxLoad: number
- *      participants: Array.<Member.Id>
- *      masterClassDescription: Masterclass.Description
- * }} masterclassParams
+ * @param {Masterclass.Params} masterclassParams
  * @constructor
  */
 
@@ -111,3 +101,19 @@ Masterclass.Permission = {
  * }}
  */
 Masterclass.Description;
+
+
+/**
+ * @typedef {{
+ *      id: string
+ *      version: number
+ *      subversion: number
+ *      agePerm: Masterclass.Permission
+ *      date: Date
+ *      owner: Teacher.Id
+ *      maxLoad: number
+ *      participants: Array.<Member.Id>
+ *      masterClassDescription: Masterclass.Description
+ * }}
+ */
+Masterclass.Params;
