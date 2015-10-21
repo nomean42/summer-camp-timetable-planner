@@ -19,17 +19,17 @@ IMasterclassOperation.prototype.initMasterclass = function(masterclassParams) {}
 
 /**
  *
- * @param {string} prop
- * @param {*} value
+ * @param {Masterclass} masterclass
+ * @param {Masterclass.Params} masterclassParams
  * @return {Masterclass}
  */
-IMasterclassOperation.prototype.setProp = function(prop, value) {};
+IMasterclassOperation.prototype.setProp = function(masterclass, masterclassParams) {};
 
 
 /**
  *
+ * @param {Masterclass} masterclass
  * @param {string} prop
- * @param {*} value
- * @return {Masterclass}
+ * @return {*}
  */
-IMasterclassOperation.prototype.getProp = function(prop, value) {};
+IMasterclassOperation.prototype.getProp = function(masterclass, prop) {};
