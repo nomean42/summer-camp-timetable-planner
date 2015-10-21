@@ -1,42 +1,7 @@
 
 
-
 /**
  *
- * @param {application} expressApp
- * @constructor
+ * @type {Routes|exports|module.exports}
  */
-Routes = function(expressApp) {
-	this._expressApp = expressApp;
-	this._routes = {users: require('./lib/users')};
-
-};
-
-
-/**
- *
- * @param {string} routeName
- * @return {expressApp.use}
- */
-Routes.prototype.initRoute = function(routeName) {
-	return this._expressApp.use('/' + routeName, this._routes[routeName]());
-};
-
-
-/**
- * @type {Object}
- */
-Routes.prototype._routes;
-
-
-/**
- * @type {application}
- */
-Routes.prototype._expressApp;
-
-
-/**
- *
- * @type {Function}
- */
-module.exports = Routes;
+module.exports = require('./lib/rout-manager');
