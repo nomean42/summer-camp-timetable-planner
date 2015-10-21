@@ -3,17 +3,7 @@
 
 /**
  *
- * @param {{
- *      id: string
- *      version: number
- *      subversion: number
- *      agePerm: Masterclass.Permission
- *      date: Date
- *      master: Teacher.Id
- *      maxLoad: number
- *      students: Array.<Member.Id>
- *      masterClassDescription: Masterclass.Description
- * }} masterclassParams
+ * @param {Masterclass.Params} masterclassParams
  * @constructor
  */
 
@@ -79,7 +69,7 @@ Masterclass.prototype._maxLoad;
 
 
 /**
- * @type {number}
+ * @type {Array.<Member.Id>}
  * @private
  */
 Masterclass.prototype._students;
@@ -111,3 +101,20 @@ Masterclass.Permission = {
  * }}
  */
 Masterclass.Description;
+
+
+/**
+ * @typedef {{
+ *      id: string
+ *      version: number
+ *      subversion: number
+ *      agePerm: Masterclass.Permission
+ *      date: Date
+ *      owner: Teacher.Id
+ *      maxLoad: number
+ *      participants: Array.<Member.Id>
+ *      masterClassDescription: Masterclass.Description
+ * }}
+ */
+Masterclass.Params;
+

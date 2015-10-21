@@ -18,7 +18,6 @@ var ApiServer = function() {
 		.listen(port, function() {
 			console.log('Express server listening on port', port);
 		});
-
 	this._routes.initRoute('users');
 };
 
@@ -28,5 +27,3 @@ var ApiServer = function() {
  * @type {ApiServer}
  */
 module.exports = ApiServer;
-
-
