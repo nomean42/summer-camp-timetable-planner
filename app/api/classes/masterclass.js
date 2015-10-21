@@ -69,7 +69,7 @@ Masterclass.prototype._maxLoad;
 
 
 /**
- * @type {number}
+ * @type {Array.<Member.Id>}
  * @private
  */
 Masterclass.prototype._students;
