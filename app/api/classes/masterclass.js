@@ -102,6 +102,7 @@ Masterclass.Permission = {
  */
 Masterclass.Description;
 
+
 /**
  * @typedef {{
  *      id: string
