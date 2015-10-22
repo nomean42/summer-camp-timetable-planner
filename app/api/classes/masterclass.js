@@ -91,7 +91,6 @@ Masterclass.prototype.setProp = function(masterclassParams) {
 	Object.keys(masterclassParams).forEach(function(property, i, array) {
 		masterclass[property] = masterclassParams[property];
 	}, this);
-	return masterclass;
 };
 
 
