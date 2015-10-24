@@ -1,5 +1,6 @@
 var routes = {
-	users: require('./lib/users')
+	users: require('./lib/users'),
+	masterclasses: require('./lib/masterclasses')
 };
 
 

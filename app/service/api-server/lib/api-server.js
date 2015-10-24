@@ -19,6 +19,7 @@ var ApiServer = function() {
 			console.log('Express server listening on port', port);
 		});
 	this._routes.initRoute('users');
+	this._routes.initRoute('masterclasses');
 };
 
 
