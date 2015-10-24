@@ -2,6 +2,6 @@
 
 /**
  *
- * @type {Routes|exports|module.exports}
+ * @type {Routes}
  */
-module.exports = require('./lib/rout-manager');
+module.exports = require('./lib/route-manager');

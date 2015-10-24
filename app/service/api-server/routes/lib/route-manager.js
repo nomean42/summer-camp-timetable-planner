@@ -37,7 +37,6 @@ Routes.prototype._expressApp;
 
 /**
  *
- * @type {Function}
+ * @type {Routes}
  */
 module.exports = Routes;
-
