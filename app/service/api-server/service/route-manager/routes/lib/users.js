@@ -1,5 +1,5 @@
 var express = require('express');
-var Member = require('../../../../.././member');
+
 
 
 /**
@@ -20,7 +20,7 @@ var users = function() {
 	});
 	router.get('/create/:name', function(req, res, next) {
 		var name = req.params.name;
-		var newMember = new Member({firstName: name},Member.Type.STUDENT);
+		var newMember = new summer.models.Member({firstName: name},summer.models.Member.Type.STUDENT);
 		return res.send(newMember.getFullName());
 	});
 

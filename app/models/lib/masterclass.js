@@ -139,3 +139,4 @@ Masterclass.Description;
  */
 Masterclass.Params;
 
+module.exports = Masterclass;
