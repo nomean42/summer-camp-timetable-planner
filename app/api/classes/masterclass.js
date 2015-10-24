@@ -83,18 +83,17 @@ Masterclass.prototype._masterClassDescription;
 
 /**
  *
- * @param {Masterclass.Params} masterclassParams
+ * @param {string} prop
+ * @param {*} value
  */
-Masterclass.prototype.setProp = function(masterclassParams) {
-	Object.keys(masterclassParams).forEach(function(property, i, array) {
-		this[property] = masterclassParams[property];
-	}, this);
+Masterclass.prototype.setProp = function(prop, value) {
+	this[prop] = value;
 };
 
 
 /**
  *
- * @param {string} prop
+ * @param {} prop
  * @return {*}
  */
 Masterclass.prototype.getProp = function(prop) {
