@@ -98,8 +98,7 @@ Masterclass.prototype.setProp = function(masterclassParams) {
  * @return {*}
  */
 Masterclass.prototype.getProp = function(prop) {
-	var masterclass = this;
-	return masterclass[prop];
+	return this[prop];
 };
 
 

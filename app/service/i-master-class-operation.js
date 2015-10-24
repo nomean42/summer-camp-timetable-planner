@@ -31,7 +31,6 @@ IMasterclassOperation.prototype.setProp = function(masterclass, prop, value) {};
  *
  * @param {Masterclass} masterclass
  * @param {string} prop
- * @param {*} value
  * @return {Masterclass}
  */
-IMasterclassOperation.prototype.getProp = function(masterclass, prop, value) {};
+IMasterclassOperation.prototype.getProp = function(masterclass, prop) {};
