@@ -1,5 +1,5 @@
 var express = require('express');
-var Member = require('../../../../../../api/classes/member');
+var Member = require('../../../../.././member');
 
 
 /**
