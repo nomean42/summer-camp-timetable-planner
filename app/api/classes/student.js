@@ -12,7 +12,7 @@ Student = function(baseParams, extendParams) {
 	this._squad = extendParams.squad;
 	this._status = Student.Status.FREE;
 
-    Member.call(this, baseParams, Member.Type.STUDENT);
+	Member.call(this, baseParams, Member.Type.STUDENT);
 };
 Student.prototype = Object.create(Member.prototype);
 
