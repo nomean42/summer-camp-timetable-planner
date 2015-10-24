@@ -134,3 +134,5 @@ Member.Params;
   * @typedef {?string}
  */
 Member.Id;
+
+module.exports = Member;

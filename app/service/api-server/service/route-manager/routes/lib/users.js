@@ -1,4 +1,5 @@
 var express = require('express');
+var Member = require('../../../../../../api/classes/member');
 
 
 /**
@@ -17,8 +18,10 @@ var users = function() {
 	router.get('/count', function(req, res, next) {
 		return res.send('count!');
 	});
-	router.get('/create', function(req, res, next) {
-		return res.send('user create!');
+	router.get('/create/:name', function(req, res, next) {
+		var name = req.params.name;
+		var newMember = new Member({firstName: name},Member.Type.STUDENT);
+		return res.send(newMember.getFullName());
 	});
 
 	return router;
