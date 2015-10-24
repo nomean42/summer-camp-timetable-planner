@@ -17,6 +17,9 @@ var users = function() {
 	router.get('/count', function(req, res, next) {
 		return res.send('count!');
 	});
+	router.get('/create', function(req, res, next) {
+		return res.send('user create!');
+	});
 
 	return router;
 };

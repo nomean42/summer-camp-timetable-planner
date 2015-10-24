@@ -1,6 +1,6 @@
 var express = require('express');
 var http = require('http');
-var Routes = require('../routes');
+var Routes = require('../service/route-manager');
 var serverConfig = require('../server-config.json');
 
 
