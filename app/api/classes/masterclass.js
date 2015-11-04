@@ -83,6 +83,27 @@ Masterclass.prototype._masterClassDescription;
 
 /**
  *
+ * @param {Masterclass.Params} masterclassParams
+ */
+Masterclass.prototype.setProp = function(masterclassParams) {
+	Object.keys(masterclassParams).forEach(function(property, i, array) {
+		this[property] = masterclassParams[property];
+	}, this);
+};
+
+
+/**
+ *
+ * @param {string} prop
+ * @return {*}
+ */
+Masterclass.prototype.getProp = function(prop) {
+	return this[prop];
+};
+
+
+/**
+ *
  * @enum {string}
  */
 Masterclass.Permission = {

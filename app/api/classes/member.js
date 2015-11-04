@@ -1,3 +1,6 @@
+
+
+
 /**
  *
  * @param  {Member.Params} paramsMember
@@ -16,10 +19,10 @@ Member = function(paramsMember, type) {
 
 /**
  *
- *@return {string}
+ * @return {string}
  */
 Member.prototype.getFullName = function() {
-	return this._firstName + ' ' + this._secondName;
+	return this._firstName + ' ' + this._secondName + ' ' + this._thirdName;
 };
 
 
