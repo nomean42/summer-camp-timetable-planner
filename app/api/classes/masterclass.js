@@ -93,7 +93,7 @@ Masterclass.prototype.setProp = function(prop, value) {
 
 /**
  *
- * @param {} prop
+ * @param {string} prop
  * @return {*}
  */
 Masterclass.prototype.getProp = function(prop) {
@@ -137,4 +137,3 @@ Masterclass.Description;
  * }}
  */
 Masterclass.Params;
-
