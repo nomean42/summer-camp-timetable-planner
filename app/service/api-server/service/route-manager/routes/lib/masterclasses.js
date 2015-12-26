@@ -6,13 +6,16 @@ var express = require('express');
  */
 var masterclasses = function() {
 	var router = express.Router();
-	router.get('/', function(req, res, next) {
-		next();
-		return res.send('MASTERCLASSES!');
-	});
+
+	//TODO get masterclass by id
+	//TODO get masterclass array by params
+
 	router.get('/create', function(req, res, next) {
 		return res.send('masterclass create!');
 	});
+
+	//TODO add update request
+	//TODO add remove request
 
 	return router;
 };
