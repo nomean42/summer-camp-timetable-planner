@@ -2,9 +2,10 @@ var express = require('express');
 
 
 /**
+ * @param {IDataBase} database
  * @return {express.Router}
  */
-var users = function() {
+var users = function(database) {
 	var router = express.Router();
 
 	router.get('/id/:id', function(req, res, next) {
