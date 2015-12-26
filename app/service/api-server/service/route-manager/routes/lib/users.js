@@ -1,34 +1,35 @@
 var express = require('express');
 
 
-
 /**
  * @return {express.Router}
  */
 var users = function() {
 	var router = express.Router();
-	router.get('/', function(req, res, next) {
-		next();
-		return res.send('USERS!');
-	});
+
 	router.get('/id/:id', function(req, res, next) {
 		var id = req.params.id;
+		//TODO get user by id
 		return res.send('id:' + id);
 	});
-	router.get('/count', function(req, res, next) {
-		return res.send('count!');
-	});
+
+	//TODO get user array by params
+
+	//TODO change get to all for all request support (get, post etc)
 	router.get('/create/:name', function(req, res, next) {
 		var name = req.params.name;
-		var newMember = new summer.models.Member({firstName: name},summer.models.Member.Type.STUDENT);
+		var newMember = new summer.models.Member({firstName: name}, summer.models.Member.Type.STUDENT);
 		return res.send(newMember.getFullName());
 	});
+
+	//TODO add update request
+	//TODO add remove request
 
 	return router;
 };
 
 
 /**
- *  * @type {Function}
+ * @type {Function}
  */
 module.exports = users;
