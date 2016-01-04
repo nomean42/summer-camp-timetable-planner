@@ -8,16 +8,17 @@ var express = require('express');
 var users = function(database) {
 	var router = express.Router();
 
-	router.get('/id/:id', function(req, res, next) {
+	router.all('/id/:id', function(req, res, next) {
 		var id = req.params.id;
 		//TODO get user by id
-		return res.send('id:' + id);
+		var result = database.get(Database.Type.MEMBER, 'id', id);
+		return res.send(result);
 	});
 
 	//TODO get user array by params
 
 	//TODO change get to all for all request support (get, post etc)
-	router.get('/create/:name', function(req, res, next) {
+	router.all('/create/:name', function(req, res, next) {
 		var name = req.params.name;
 		var newMember = new summer.models.Member({firstName: name}, summer.models.Member.Type.STUDENT);
 		return res.send(newMember.getFullName());
