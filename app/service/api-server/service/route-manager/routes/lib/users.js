@@ -14,8 +14,7 @@ var users = function(database) {
 		return res.send(result);
 	});
 
-	//TODO get user array by params
-	//TODO linter conflicts
+	//TODO resolve linter conflicts
 	router.all('/param', function(req, res, next) {
 		var isRequestCorrect = function(reqest) {
 			for (var param in reqest) {
@@ -25,13 +24,14 @@ var users = function(database) {
 			return false;
 		};
 		if (isRequestCorrect(req.query)) {
-			for (var param in req.query) {
-				var result = database.get(Database.Type.MEMBER, param, req.query[param]);
+			var request = req.query;
+			for (var param in request) {
+				var result = database.get(Database.Type.MEMBER, param, request[param]);
+				return res.send(result);
 			}
 		}
 	});
 
-	//TODO change get to all for all request support (get, post etc)
 	router.all('/create/:name', function(req, res, next) {
 		var name = req.params.name;
 		var newMember = new summer.models.Member({firstName: name}, summer.models.Member.Type.STUDENT);

@@ -54,7 +54,7 @@ DataBase.prototype._init = function() {
  * @protected
  */
 DataBase.prototype._generateId = function() {
-	// todo
+	//TODO
 	return (Math.random() * 1000).toString();
 };
 

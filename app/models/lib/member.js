@@ -22,8 +22,9 @@ Member = function(paramsMember, type) {
  * @return {string}
  */
 Member.prototype.getFullName = function() {
-	return this._firstName + ' ' + this._secondName + ' ' + this._thirdName;
+	return this._secondName + ' ' + this._firstName + ' ' + this._thirdName;
 };
+//TODO get short name
 
 
 /**
