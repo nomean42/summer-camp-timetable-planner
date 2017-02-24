@@ -6,7 +6,6 @@ var serverConfig = require('../server-config.json');
 
 
 /**
- *
  * @constructor
  */
 var ApiServer = function() {
@@ -23,7 +22,6 @@ var ApiServer = function() {
 
 
 /**
- *
  * @type {ApiServer}
  */
 module.exports = ApiServer;

@@ -23,6 +23,6 @@ var users = function() {
 
 
 /**
- *  * @type {Function}
+ * @type {Function}
  */
 module.exports = users;

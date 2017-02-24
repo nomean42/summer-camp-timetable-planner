@@ -2,7 +2,6 @@
 
 
 /**
- *
  * @constructor
  * @interface
  */
@@ -19,7 +18,6 @@ IDataBase.prototype.set = function(type, data) {};
 
 
 /**
- *
  * @param {IDataBase.Type} type
  * @param {string} property
  * @param {*} value

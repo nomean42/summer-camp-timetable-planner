@@ -2,19 +2,16 @@
 
 
 /**
- *
  * @param {application} expressApp
  * @constructor
  */
 Routes = function(expressApp) {
 	this._expressApp = expressApp;
 	this._routes = {users: require('./users')};
-
 };
 
 
 /**
- *
  * @param {string} routeName
  * @return {expressApp.use}
  */
@@ -36,7 +33,6 @@ Routes.prototype._expressApp;
 
 
 /**
- *
  * @type {Routes}
  */
 module.exports = Routes;

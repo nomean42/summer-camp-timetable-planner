@@ -2,7 +2,6 @@
 
 
 /**
- *
  * @constructor
  * @implements {IDataBase}
  */
@@ -24,7 +23,6 @@ DataBase.prototype.set = function(type, data) {
 
 
 /**
- *
  * @inheritDoc
  */
 DataBase.prototype.get = function(type, property, value) {
