@@ -3,7 +3,6 @@
 ##v0.0.2
 - Add routes master class create, user create (#38)
 - Rename member to user all over the project (#39)
-- Add documentation server requests, API (#40)
 - Add DataBase.push, DataBase.remove methods to interface (#41)
 - Add mongo db provider using mongoose package (#45)
 
@@ -14,13 +13,16 @@
 - Add places add, and places get routes
 
 ##v0.0.4
-- Add data base cluster instanse (#44)
+- Add documentation server requests, API (#40)
 
 ##v0.0.5
 - Integrate building/packing system (obfuscation, minimization)
 
 ##v0.0.6
 - Add password authentification
+
+##v0.0.7
+- Add data base cluster instanse (#44)
 
 ##v0.1.0
 - UI index page
