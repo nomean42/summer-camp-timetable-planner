@@ -3,7 +3,6 @@ var ApiServer = require('../service/api-server');
 
 
 /**
- *
  * @constructor
  */
 var App = function() {

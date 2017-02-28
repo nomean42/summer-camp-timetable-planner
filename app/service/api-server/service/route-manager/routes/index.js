@@ -5,7 +5,9 @@ var routes = {
 
 
 /**
- *
- * @type {{users: Function}}
+ * @type {{
+     users: Function,
+     masterclasses: Function
+ }}
  */
 module.exports = routes;
