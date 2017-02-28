@@ -85,3 +85,5 @@ Student.Status = {
  * }}
  */
 Student.Params;
+
+module.exports = Student;
