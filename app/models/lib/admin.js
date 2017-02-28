@@ -1,8 +1,8 @@
+var Member = require('./member.js');
 
-// todo var for all models
+
 
 /**
- *
  * @param {Member.Params} baseParams
  * @constructor
  */
