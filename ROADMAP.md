@@ -8,7 +8,7 @@
 - Add mongo db provider using mongoose package (#45)
 
 ##v0.0.3
-- Add place model (number of seats, computer for teacher, computers for children (number), blackboard, dlp, intaractive board, audio system, headphones, tablets, power supply, microphone, ip cam, web cam for children)
+- Add place model (#46)
 - Add to master class place param
 - Add places provider instance (add, get with params)
 - Add places add, and places get routes
@@ -16,9 +16,22 @@
 ##v0.0.4
 - Add data base cluster instanse (#44)
 
+##v0.0.5
+- Integrate building/packing system (obfuscation, minimization)
+
+##v0.0.6
+- Add password authentification
+
 ##v0.1.0
 - UI index page
+
+##v0.1.1
+- Apply building/packing system to UI files
+
+##v0.2.0
+- Add new DataBase provider (maria, sql etc)
 
 ##vX.X.X
 - Add dividing to groups by custom ages
 - Add dividing to groups by custom properties (skills, sex, native town etc.)
+- Add generation timetable
