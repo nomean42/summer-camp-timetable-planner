@@ -1,8 +1,8 @@
+var Member = require('./member.js');
 
 
 
 /**
- *
  * @param {Member.Params} baseParams
  * @constructor
  */

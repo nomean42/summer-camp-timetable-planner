@@ -2,7 +2,6 @@
 
 
 /**
- *
  * @param  {Member.Params} paramsMember
  * @param {Member.Type} type
  * @constructor
@@ -18,7 +17,6 @@ Member = function(paramsMember, type) {
 
 
 /**
- *
  * @return {string}
  */
 Member.prototype.getFullName = function() {
@@ -28,7 +26,6 @@ Member.prototype.getFullName = function() {
 
 
 /**
- *
  * @param {Member.Id} id
  */
 Member.prototype.setId = function(id) {
@@ -37,13 +34,12 @@ Member.prototype.setId = function(id) {
 	}
 	else {
 		var name = this.getFullName();
-       	console.log('id for', name, 'already set');
+		console.log('id for', name, 'already set');
 	}
 };
 
 
 /**
- *
  * @return {Member.Id}
  */
 Member.prototype.getId = function() {
@@ -121,11 +117,11 @@ Member.Type = {
 
 /**
  * @typedef {{
- * 		firstName: string
- * 		secondName: string
- * 		thirdName: string
- * 		id: string
- * 		gender: Member.Gender
+ *     firstName: string
+ *     secondName: string
+ *     thirdName: string
+ *     id: string
+ *     gender: Member.Gender
  * }}
  */
 Member.Params;

@@ -1,4 +1,3 @@
-
 var models = {
 	Admin: require('./lib/admin'),
 	Masterclass: require('./lib/masterclass'),
@@ -9,7 +8,18 @@ var models = {
 
 
 /**
- *
- * @type {}
+ * @typedef {{
+ *     Admin: Admin,
+ *     Masterclass: Masterclass,
+ *     Member: Member,
+ *     Student: Student,
+ *     Teacher: Teacher
+ * }}
+ */
+var Models;
+
+
+/**
+ * @type {Models}
  */
 module.exports = models;

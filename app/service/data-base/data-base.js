@@ -61,3 +61,9 @@ DataBase.prototype._generateId = function() {
  * @type {Array.<IDataBase.Item>}
  */
 DataBase.prototype._memberDataBase;
+
+
+/**
+ * @type {DataBase}
+ */
+module.exports = DataBase;
