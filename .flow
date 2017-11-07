@@ -6,6 +6,4 @@
 	release = release/
 	hotfix = hotfix/
 	support = support/
-	versiontag = 
-[gitflow "path"]
-	hooks = /home/oleg/project/alien/summer-camp-timetable-planner/.git/hooks
+	versiontag =
