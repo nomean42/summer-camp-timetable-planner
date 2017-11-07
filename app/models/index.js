@@ -1,7 +1,7 @@
 var models = {
 	Admin: require('./lib/admin'),
 	Masterclass: require('./lib/masterclass'),
-	Member: require('./lib/member'),
+	User: require('./lib/user'),
 	Student: require('./lib/student'),
 	Teacher: require('./lib/teacher')
 };

@@ -3,12 +3,13 @@ var Member = require('./member.js');
 
 
 /**
- * @param {Member.Params} baseParams
+ *
+ * @param {User.Params} baseParams
  * @constructor
  */
 Teacher = function(baseParams) {
-	Member.call(this, baseParams, Member.Type.TEACHER);
+	User.call(this, baseParams, User.Type.TEACHER);
 };
-Teacher.prototype = Object.create(Member.prototype);
+Teacher.prototype = Object.create(User.prototype);
 
 module.exports = Teacher;

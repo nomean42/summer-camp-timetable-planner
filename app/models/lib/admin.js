@@ -2,13 +2,15 @@ var Member = require('./member.js');
 
 
 
+
 /**
- * @param {Member.Params} baseParams
+ *
+ * @param {User.Params} baseParams
  * @constructor
  */
 Admin = function(baseParams) {
-	Member.call(this, baseParams, Member.Type.ADMIN);
+	User.call(this, baseParams, User.Type.ADMIN);
 };
-Admin.prototype = Object.create(Member.prototype);
+Admin.prototype = Object.create(User.prototype);
 
 module.exports = Admin;

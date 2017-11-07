@@ -30,7 +30,7 @@ IDataBase.prototype.get = function(type, property, value) {};
  * @enum {string}
  */
 IDataBase.Type = {
-	MEMBER: 'member',
+	USER: 'user',
 	MASTERCLASS: 'masterclass'
 };
 

@@ -69,7 +69,7 @@ Masterclass.prototype._maxLoad;
 
 
 /**
- * @type {Array.<Member.Id>}
+ * @type {Array.<User.Id>}
  * @private
  */
 Masterclass.prototype._students;
@@ -122,15 +122,15 @@ Masterclass.Description;
 
 /**
  * @typedef {{
- *     id: string
- *     version: number
- *     subversion: number
- *     agePerm: Masterclass.Permission
- *     date: Date
- *     owner: Teacher.Id
- *     maxLoad: number
- *     participants: Array.<Member.Id>
- *     masterClassDescription: Masterclass.Description
+ *      id: string
+ *      version: number
+ *      subversion: number
+ *      agePerm: Masterclass.Permission
+ *      date: Date
+ *      owner: Teacher.Id
+ *      maxLoad: number
+ *      participants: Array.<User.Id>
+ *      masterClassDescription: Masterclass.Description
  * }}
  */
 Masterclass.Params;
