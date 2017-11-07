@@ -69,7 +69,7 @@ Masterclass.prototype._maxLoad;
 
 
 /**
- * @type {Array.<Member.Id>}
+ * @type {Array.<User.Id>}
  * @private
  */
 Masterclass.prototype._students;
@@ -133,7 +133,7 @@ Masterclass.Description;
  *      date: Date
  *      owner: Teacher.Id
  *      maxLoad: number
- *      participants: Array.<Member.Id>
+ *      participants: Array.<User.Id>
  *      masterClassDescription: Masterclass.Description
  * }}
  */

@@ -3,7 +3,7 @@
 
 /**
  *
- * @param {Member.Params} baseParams
+ * @param {User.Params} baseParams
  * @param {Student.Params} extendParams
  * @constructor
  */
@@ -12,9 +12,9 @@ Student = function(baseParams, extendParams) {
 	this._squad = extendParams.squad;
 	this._status = Student.Status.FREE;
 
-	Member.call(this, baseParams, Member.Type.STUDENT);
+	User.call(this, baseParams, User.Type.STUDENT);
 };
-Student.prototype = Object.create(Member.prototype);
+Student.prototype = Object.create(User.prototype);
 
 
 /**

@@ -6,7 +6,7 @@
  * @implements {IDataBase}
  */
 DataBase = function() {
-	this._memberDataBase = [];
+	this._userDataBase = [];
 	this._init();
 };
 
@@ -52,7 +52,6 @@ DataBase.prototype._init = function() {
  * @protected
  */
 DataBase.prototype._generateId = function() {
-	//TODO
 	return (Math.random() * 1000).toString();
 };
 
@@ -60,4 +59,4 @@ DataBase.prototype._generateId = function() {
 /**
  * @type {Array.<IDataBase.Item>}
  */
-DataBase.prototype._memberDataBase;
+DataBase.prototype._userDataBase;
