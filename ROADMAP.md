@@ -37,3 +37,8 @@
 - Add dividing to groups by custom ages
 - Add dividing to groups by custom properties (skills, sex, native town etc.)
 - Add generation timetable
+- Add location to places
+- Add maps API to get location from UI (Google and Yandex maps)
+- Add calculation minimal distance to change places for students
+- Add third dimention (floor levels) in distance count
+- Add warn places (to change locations)

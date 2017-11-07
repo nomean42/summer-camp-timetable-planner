@@ -2,7 +2,6 @@
 
 
 /**
- *
  * @param {Masterclass.Params} masterclassParams
  * @constructor
  */
@@ -64,6 +63,7 @@ Masterclass.prototype._master;
 
 /**
  * @type {number}
+ * @private
  */
 Masterclass.prototype._maxLoad;
 
@@ -82,7 +82,6 @@ Masterclass.prototype._masterClassDescription;
 
 
 /**
- *
  * @param {Masterclass.Params} masterclassParams
  */
 Masterclass.prototype.setProp = function(masterclassParams) {
@@ -93,7 +92,6 @@ Masterclass.prototype.setProp = function(masterclassParams) {
 
 
 /**
- *
  * @param {string} prop
  * @return {*}
  */
@@ -103,7 +101,6 @@ Masterclass.prototype.getProp = function(prop) {
 
 
 /**
- *
  * @enum {string}
  */
 Masterclass.Permission = {
@@ -114,11 +111,10 @@ Masterclass.Permission = {
 
 
 /**
- *
  * @typedef {{
- *      title: string
- *      textDescription: string
- *      picture: string
+ *     title: string
+ *     textDescription: string
+ *     picture: string
  * }}
  */
 Masterclass.Description;

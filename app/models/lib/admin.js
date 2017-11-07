@@ -1,3 +1,5 @@
+var Member = require('./member.js');
+
 
 
 

@@ -46,6 +46,6 @@ var users = function(database) {
 
 
 /**
- * @type {Function}
+ * @type {function(express.Router)}
  */
 module.exports = users;

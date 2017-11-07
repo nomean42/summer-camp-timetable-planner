@@ -22,6 +22,6 @@ var masterclasses = function() {
 
 
 /**
- *  * @type {Function}
+ * @type {function(express.Router)}
  */
 module.exports = masterclasses;

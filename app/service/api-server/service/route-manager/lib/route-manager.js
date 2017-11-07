@@ -6,16 +6,16 @@ var routes = require('../routes');
  * @param {application} expressApp
  * @constructor
  */
-Routes = function(expressApp) {
+RouteManager = function(expressApp) {
 	this._expressApp = expressApp;
 };
 
 
 /**
  * @param {string} routeName
- * @return {expressApp.use}
+ * @return {express.use}
  */
-Routes.prototype.initRoute = function(routeName) {
+RouteManager.prototype.initRoute = function(routeName) {
 	return this._expressApp.use('/' + routeName, routes[routeName]());
 };
 
@@ -23,10 +23,10 @@ Routes.prototype.initRoute = function(routeName) {
 /**
  * @type {application}
  */
-Routes.prototype._expressApp;
+RouteManager.prototype._expressApp;
 
 
 /**
- * @type {Routes}
+ * @type {RouteManager}
  */
-module.exports = Routes;
+module.exports = RouteManager;

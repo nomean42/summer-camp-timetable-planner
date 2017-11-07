@@ -1,3 +1,4 @@
+var Member = require('./member.js');
 
 
 
@@ -18,7 +19,6 @@ Student.prototype = Object.create(User.prototype);
 
 
 /**
- *
  * @return {Student.Squad}
  */
 Student.prototype.getSquad = function() {
@@ -27,7 +27,6 @@ Student.prototype.getSquad = function() {
 
 
 /**
- *
  * @return {Student.Status}
  */
 Student.prototype.getStatus = function() {
@@ -79,9 +78,9 @@ Student.Status = {
 
 /**
  * @typedef {{
- * 		birthday: Date
- *		squad: Student.Squad
- *		status: Student.Status
+ *     birthday: Date
+ *     squad: Student.Squad
+ *     status: Student.Status
  * }}
  */
 Student.Params;

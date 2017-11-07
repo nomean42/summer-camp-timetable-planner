@@ -1,3 +1,7 @@
-global.summer = {};
-summer.models = require('./models');
-module.exports = require('./lib/app');
+var App = require('./lib/app');
+
+
+/**
+ * @type {App}
+ */
+var app = new App;
