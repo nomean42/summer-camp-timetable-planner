@@ -1,12 +1,14 @@
 var ApiServer = require('../service/api-server');
 var models = require('../models');
+var serverConfig = require('../server-config.json');
+
 
 
 /**
  * @constructor
  */
 var App = function() {
-	this._apiServer = new ApiServer;
+	this._apiServer = new ApiServer(serverConfig);
 	this._models = models;
 };
 

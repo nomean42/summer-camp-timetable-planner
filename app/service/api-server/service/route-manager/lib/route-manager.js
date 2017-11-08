@@ -3,7 +3,7 @@ var routes = require('../routes');
 
 
 /**
- * @param {application} expressApp
+ * @param {express} expressApp
  * @constructor
  */
 RouteManager = function(expressApp) {
@@ -21,7 +21,8 @@ RouteManager.prototype.initRoute = function(routeName) {
 
 
 /**
- * @type {application}
+ * @see https://www.npmjs.com/package/express
+ * @type {express}
  */
 RouteManager.prototype._expressApp;
 

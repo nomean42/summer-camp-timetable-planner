@@ -1,14 +1,14 @@
 var express = require('express');
 var http = require('http');
 var RouteManager = require('../service/route-manager');
-var serverConfig = require('../server-config.json');
 
 
 
 /**
+ * @param {ApiServer.ServerConfig}
  * @constructor
  */
-var ApiServer = function() {
+var ApiServer = function(serverConfig) {
 	this._expressApp = express();
 	this._routeManager = new RouteManager(this._expressApp);
 	var port = serverConfig.port;
@@ -21,6 +21,27 @@ var ApiServer = function() {
 	this._routeManager.initRoute('users');
 	this._routeManager.initRoute('masterclasses');
 };
+
+
+/**
+ * @see https://www.npmjs.com/package/express
+ * @type {express}
+ */
+ApiServer.prototype._expressApp;
+
+
+/**
+ * @type {RouteManager}
+ */
+ApiServer.prototype._routeManager;
+
+
+/**
+ * @typedef {{
+ *     port: number
+ *}}
+ */
+ApiServer.ServerConfig;
 
 
 /**
