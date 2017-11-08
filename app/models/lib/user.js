@@ -114,10 +114,10 @@ User.Type = {
 
 /**
  * @typedef {{
- *     firstName: string
- *     secondName: string
- *     thirdName: string
- *     id: string
+ *     firstName: string,
+ *     secondName: string,
+ *     thirdName: string,
+ *     id: string,
  *     gender: User.Gender
  * }}
  */

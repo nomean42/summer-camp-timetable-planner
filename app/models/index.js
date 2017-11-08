@@ -11,7 +11,7 @@ var models = {
  * @typedef {{
  *     Admin: Admin,
  *     Masterclass: Masterclass,
- *     Member: Member,
+ *     User: User,
  *     Student: Student,
  *     Teacher: Teacher
  * }}

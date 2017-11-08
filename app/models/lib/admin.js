@@ -1,5 +1,4 @@
-var Member = require('./member.js');
-
+var User = require('./user.js');
 
 
 

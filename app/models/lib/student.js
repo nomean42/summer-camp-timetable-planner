@@ -1,15 +1,14 @@
-var Member = require('./member.js');
+var User = require('./user.js');
 
 
 
 /**
- *
  * @param {User.Params} baseParams
  * @param {Student.Params} extendParams
  * @constructor
  */
 Student = function(baseParams, extendParams) {
-	this._birthday = extendParams.birthday;
+	this._birthdate = extendParams.birthdate;
 	this._squad = extendParams.squad;
 	this._status = Student.Status.FREE;
 
@@ -38,7 +37,7 @@ Student.prototype.getStatus = function() {
  * @type {Date}
  * @protected
  */
-Student.prototype._birthday;
+Student.prototype._birthdate;
 
 
 /**
@@ -78,8 +77,8 @@ Student.Status = {
 
 /**
  * @typedef {{
- *     birthday: Date
- *     squad: Student.Squad
+ *     birthday: Date,
+ *     squad: Student.Squad,
  *     status: Student.Status
  * }}
  */
