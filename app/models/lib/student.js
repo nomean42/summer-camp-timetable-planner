@@ -7,7 +7,7 @@ var User = require('./user.js');
  * @param {Student.Params} extendParams
  * @constructor
  */
-Student = function(baseParams, extendParams) {
+var Student = function(baseParams, extendParams) {
 	this._birthdate = extendParams.birthdate;
 	this._squad = extendParams.squad;
 	this._status = Student.Status.FREE;

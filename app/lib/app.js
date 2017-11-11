@@ -8,8 +8,8 @@ var serverConfig = require('../server-config.json');
  * @constructor
  */
 var App = function() {
+	Models = models;
 	this._apiServer = new ApiServer(serverConfig);
-	this._models = models;
 };
 
 
@@ -17,12 +17,6 @@ var App = function() {
  * @type {ApiServer}
  */
 App.prototype._apiServer;
-
-
-/**
- * @type {Models}
- */
-App.prototype._models;
 
 
 /**

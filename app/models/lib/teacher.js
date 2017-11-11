@@ -6,7 +6,7 @@ var User = require('./user.js');
  * @param {User.Params} baseParams
  * @constructor
  */
-Teacher = function(baseParams) {
+var Teacher = function(baseParams) {
 	User.call(this, baseParams, User.Type.TEACHER);
 };
 Teacher.prototype = Object.create(User.prototype);

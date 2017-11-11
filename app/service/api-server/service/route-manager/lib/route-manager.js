@@ -6,7 +6,7 @@ var routes = require('../routes');
  * @param {express} expressApp
  * @constructor
  */
-RouteManager = function(expressApp) {
+var RouteManager = function(expressApp) {
 	this._expressApp = expressApp;
 };
 

@@ -6,7 +6,7 @@
  * @param {User.Type} type
  * @constructor
  */
-User = function(paramsUser, type) {
+var User = function(paramsUser, type) {
 	this._firstName = paramsUser.firstName;
 	this._secondName = paramsUser.secondName;
 	this._thirdName = paramsUser.thirdName;

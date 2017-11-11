@@ -6,7 +6,7 @@
  * @constructor
  */
 
-Masterclass = function(masterclassParams) {
+var Masterclass = function(masterclassParams) {
 	this._id = masterclassParams.id;
 	this._version = masterclassParams.version;
 	this._subversion = masterclassParams.subversion;
