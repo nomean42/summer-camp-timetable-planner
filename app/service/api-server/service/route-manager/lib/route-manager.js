@@ -16,7 +16,8 @@ RouteManager = function(expressApp) {
  * @return {express.use}
  */
 RouteManager.prototype.initRoute = function(routeName) {
-	return this._expressApp.use('/' + routeName, routes[routeName]());
+	var router = routes[routeName]();
+	return this._expressApp.use('/' + routeName, router);
 };
 
 
