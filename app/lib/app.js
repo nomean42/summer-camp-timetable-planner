@@ -8,7 +8,8 @@ var serverConfig = require('../server-config.json');
  * @constructor
  */
 var App = function() {
-	Models = models;
+	global.summer = {}
+	global.summer.models = models;
 	this._apiServer = new ApiServer(serverConfig);
 };
 
